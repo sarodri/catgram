@@ -1,29 +1,32 @@
 {
   "name": "curso-platzi-react-avanzado",
   "version": "1.0.0",
-  "description": "**¡Sígueme en Youtube para más contenido de React y Javascript!** 👉 https://www.youtube.com/midudev",
+  "description": "JS-React project",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
     "dev": "webpack-dev-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/midudev/curso-platzi-react-avanzado.git"
+    "url": "git+https://github.com/sarodri/catgram.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/midudev/curso-platzi-react-avanzado/issues"
+    "url": "https://github.com/sarodri/catgram.git"
   },
-  "homepage": "https://github.com/midudev/curso-platzi-react-avanzado#readme",
+  "homepage": "https://github.com/sarodri/catgram.git",
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^9.1.2",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
