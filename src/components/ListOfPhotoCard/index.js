@@ -6,9 +6,10 @@ export const ListOfPhotoCard = () => {
   return (
     <ul>
       {
-        db.photos.map(category => <li key={category.id}><PhotoCard {...category} /></li>)
+        db.photos.map(category =><PhotoCard key={category.id}{...category} /> )
       }
     </ul>
   )
 }
+
 
